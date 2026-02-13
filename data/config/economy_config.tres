@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="EconomyConfig" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/economy/EconomyConfig.gd" id="1_EconomyConfig"]
+
+[resource]
+script = ExtResource("1_EconomyConfig")
+initial_cash = 100.0
+base_irs_due = 150.0
+fraud_reward_multiplier = 1.2
+suspicion_penalty = 5.0
