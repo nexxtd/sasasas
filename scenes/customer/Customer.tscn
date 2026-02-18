@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/customer/CustomerAI.gd" id="1_CustomerAI"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_customer"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_customer"]
+
+[node name="Customer" type="CharacterBody3D"]
+script = ExtResource("1_CustomerAI")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_customer")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_customer")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]

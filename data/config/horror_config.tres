@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="HorrorConfig" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/horror/HorrorConfig.gd" id="1_HorrorConfig"]
+
+[resource]
+script = ExtResource("1_HorrorConfig")
+anomaly_tier_1 = 20.0
+anomaly_tier_2 = 50.0
+anomaly_tier_3 = 80.0
+monster_chase_duration = 60.0
